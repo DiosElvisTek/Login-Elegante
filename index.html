@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Righteous&family=Ubuntu+Condensed&display=swap" rel="stylesheet">  
+    <title>Login-Transition</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario__login">
+
+            <section class="formulario__login__sign-in" id="Column1">
+                <h1>Sign In</h1>
+                    <div class="formulario__login__sign-in__buttons">
+                        <button class="BtnFacebook"><i class="fab fa-facebook-f"></i></button>
+                        <button class="BtnGoogle"><i class="fab fa-google-plus-g"></i></button>
+                        <button class="BtnIn"><i class="fab fa-linkedin-in"></i></button>
+                        
+                    </div>
+                <p>or use your account</p>
+                    <div class="formulario__login__sign-in__inputs">
+                        <input type="text" maxlength="100" placeholder="Email" id="ItEmail">
+                        <input type="password" maxlength="50" placeholder="Password" id="ItPassword">
+                    </div>
+                <a href="#"> <p>Forgot your password?</p></a>
+                    <div class="formulario__login_sign-in__button-signin">
+                    <button id="SignInBTN">SIGN IN</button>
+                    </div>
+            </section>
+
+            <!--------- LADO OCULTO 1-------->
+
+            <section class="formulario__login__sign-inL" id="Column2">
+                <div class="formulario__login__sign-inL__welcomeL">
+                    <p>Welcome Back!</p>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button id="Signin">SIGN IN</button>
+                </div>
+            </section>
+            
+            <!--------- TERMINA LADO OCULTO 1-------->
+
+            <section class="formulario__login__sign-upR" id="Column3">
+                <div class="formulario__login__sign-upR__welcomeR">
+                    <p>Hello, Friend!</p>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="Signup">SIGN UP</button>
+                </div>
+            </section>
+
+            <!--------- LADO OCULTO 2-------->
+            
+            <section class="formulario__login__sign-up" id="Column4">
+                <h1>Create Account</h1>
+                    <div class="formulario__login__sign-up__buttons">
+                        <button class="BtnFacebook"><i class="fab fa-facebook-f"></i></button>
+                        <button class="BtnGoogle"><i class="fab fa-google-plus-g"></i></button>
+                        <button class="BtnIn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                <p>or use your email for registration</p>
+                    <div class="formulario__login__sign-up__inputs">
+                        <input type="text" maxlength="50" placeholder="Email" id="ItEmail2">
+                        <input type="password" maxlength="50" placeholder="Password" id="ItPassword2">
+                    </div>
+                    <div class="formulario__login_sign-up__button-signup">
+                    <button id="SignUpBTN">SIGN UP</button>
+                    </div>
+            </section>
+            
+            <!--------- TERMINA LADO OCULTO -------->
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

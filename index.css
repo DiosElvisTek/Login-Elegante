@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url(BG.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulario__login{
+    width: 60%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+/* -- -- -- AQUI SE TRABAJA CON EL LADO DEL SIGN IN -- -- --*/
+
+.formulario__login__sign-in{
+    background-color: rgb(255,255,255);
+    border-radius: 15px 0px 0px 15px;
+    display: grid;
+    grid-column: span 1;
+}
+
+.formulario__login__sign-in h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 40px 0px 0px 0px;
+    font-size: 2.5em;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-in__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__login__sign-in__buttons button{
+    margin: 20px 5px;
+    background: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1em;
+    border-radius: 50%;
+    color: rgb(71, 66, 62);
+    border: 2px solid rgb(71, 66, 62, 0.1);
+}
+
+.formulario__login__sign-in__buttons .BtnFacebook:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(24, 119, 242);
+    color: #fff;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-in__buttons .BtnGoogle:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(221, 74, 64);
+    color: #f4edef;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-in__buttons .BtnIn:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(0, 118, 183);
+    color: #fff;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-in p:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-in__inputs{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__login__sign-in__inputs input{          
+    margin: 10px 0px;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(239, 237, 238);
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.formulario__login__sign-in__inputs input:focus{   
+    border: 2px solid rgb(254, 75, 43);
+}
+
+.formulario__login__sign-in :nth-child(5){
+    cursor: default;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-in a p{
+    cursor: pointer;
+}
+
+.formulario__login__sign-in .formulario__login_sign-in__button-signin{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__login_sign-in__button-signin button{
+    transition: .3s ease all;
+    margin: 15px 0px;
+    width: 40%;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(254, 75, 43);
+    border: none;
+    border-radius: 45px 45px 45px 45px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.formulario__login_sign-in__button-signin button:hover{
+    cursor: pointer;
+    transition: .3s ease all;
+    color: rgb(254, 75, 43);
+    background-color: #fff;
+    border: 2px solid rgb(254, 75, 43);
+    transform: scale(1.1);
+}
+
+.formulario__login__sign-inL{
+    background: linear-gradient(#fe464c, #ff416a);
+    border-radius: 15px 0px 0px 15px;
+    grid-column: 1 / 2;
+    display: grid;
+    align-items: center;
+}
+
+.formulario__login__sign-inL__welcomeL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formulario__login__sign-inL__welcomeL :nth-child(1){
+    font-size: 2.5em;
+    color: white;
+    margin: 15px 0px;
+}
+
+.formulario__login__sign-inL__welcomeL :nth-child(2){
+    font-size: 1.5em;
+    color: white;
+    margin: 15px;
+    text-align: center;
+}
+
+.formulario__login__sign-inL__welcomeL button{
+    transition: .3s ease all;
+    margin: 15px 0px;
+    width: 40%;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(255, 67, 95);
+    border: 2px solid white;
+    border-radius: 45px 45px 45px 45px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.formulario__login__sign-inL__welcomeL button:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 67, 95);
+    transform: scale(1.1);
+}
+
+
+.None{
+    display: none !important;
+}
+
+.Error{
+    border: 2px solid red !important;
+    color: red !important;
+}
+/* -- -- -- AQUI SE TERMINAR DE TRABAJAR CON EL LADO DEL SIGN IN -- -- --*/
+
+
+
+/* -- -- -- AQUI SE EMPIEZA A TRABAJAR CON EL LADO DEL SIGN UP -- -- --*/
+
+.formulario__login__sign-up{
+    background-color: rgb(255,255,255);
+    border-radius: 0px 15px 15px 0px;
+    display: grid;
+    grid-column: span 1;
+    
+}
+
+.formulario__login__sign-up h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 40px 0px 0px 0px;
+    font-size: 2.5em;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-up__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__login__sign-up__buttons button{
+    margin: 20px 5px;
+    background: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1em;
+    border-radius: 50%;
+    color: rgb(71, 66, 62);
+    border: 2px solid rgb(71, 66, 62, 0.1);
+}
+
+.formulario__login__sign-up__buttons .BtnFacebook:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(24, 119, 242);
+    color: #fff;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-up__buttons .BtnGoogle:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(221, 74, 64);
+    color: #f4edef;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-up__buttons .BtnIn:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: rgb(0, 118, 183);
+    color: #fff;
+    transform: scale(0.8);
+}
+
+.formulario__login__sign-up p:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-up__inputs{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__login__sign-up__inputs input{          
+    margin: 10px 0px;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(239, 237, 238);
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.formulario__login__sign-up__inputs input:focus{   
+    border: 2px solid rgb(254, 75, 43);
+}
+
+.formulario__login__sign-up :nth-child(5){
+    cursor: default;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(0,0,0,0.8);
+}
+
+.formulario__login__sign-up .formulario__login_sign-up__button-signup{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__login_sign-up__button-signup{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__login_sign-up__button-signup button{
+    transition: .3s ease all;
+    margin: 15px 0px;
+    width: 40%;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(254, 75, 43);
+    border: none;
+    border-radius: 45px 45px 45px 45px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.formulario__login_sign-up__button-signup button:hover{
+    cursor: pointer;
+    transition: .3s ease all;
+    color: rgb(254, 75, 43);
+    background-color: #fff;
+    border: 2px solid rgb(254, 75, 43);
+    transform: scale(1.1);
+}
+
+.formulario__login__sign-upR{
+    background: linear-gradient(#fe464c, #ff416a);
+    border-radius: 0px 15px 15px 0px;
+    grid-column: 2 / 3;
+    display: grid;
+    align-items: center;
+}
+
+
+.formulario__login__sign-upR__welcomeR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formulario__login__sign-upR__welcomeR :nth-child(1){
+    font-size: 2.5em;
+    color: white;
+    margin: 15px 0px;
+}
+
+.formulario__login__sign-upR__welcomeR :nth-child(2){
+    font-size: 1.5em;
+    color: white;
+    margin: 15px;
+    text-align: center;
+}
+
+.formulario__login__sign-upR__welcomeR button{
+    transition: .3s ease all;
+    margin: 15px 0px;
+    width: 40%;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(255, 67, 95);
+    border: 2px solid white;
+    border-radius: 45px 45px 45px 45px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.formulario__login__sign-upR__welcomeR button:hover{
+    transition: .3s ease all;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 67, 95);
+    transform: scale(1.1);
+}
+
+
+/* -- -- -- AQUI SE TERMINAR DE TRABAJAR CON EL LADO DEL SIGN UP -- -- --*/
+
+
+@media screen and (max-width: 1024px){
+
+    .container{
+        overflow: hidden;
+        overflow: scroll;
+    }
+
+    .formulario__login__sign-up{
+        grid-column: 1 / 3;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .formulario__login__sign-in{
+        grid-column: 1 / 3;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .formulario__login__sign-upR{
+        grid-column: 1 / 3;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .formulario__login__sign-inL{
+        grid-column: 1 / 3;
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .formulario__login__sign-in h1, .formulario__login__sign-up h1{
+        font-size: 1.5em;
+    }
+
+    .formulario__login__sign-in__buttons button, .formulario__login__sign-up__buttons button{
+        width: 50px;
+        height: 50px;
+        font-size: 0.7em;
+    }
+
+    .formulario__login__sign-in :nth-child(3) {
+        font-size: 1em;
+    }
+    
+    .formulario__login__sign-up p{
+        font-size: 0.8em !important;
+    }
+    .formulario__login__sign-in :nth-child(5), .formulario__login__sign-up :nth-child(5){
+        font-size: 1em;
+    }
+
+    .formulario__login__sign-upR__welcomeR :nth-child(1), .formulario__login__sign-inL__welcomeL :nth-child(1){
+        font-size: 1.5em;
+    }
+
+    .formulario__login__sign-upR__welcomeR :nth-child(2), .formulario__login__sign-inL__welcomeL :nth-child(2){
+        font-size: 1em;
+    }
+}
